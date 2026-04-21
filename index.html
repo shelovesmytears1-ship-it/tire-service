@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>TireForce Pro — Profesjonalny Serwis Opon Warszawa</title>
+  <meta name="description" content="TireForce Pro — wymiana, balansowanie i naprawa opon w Warszawie. Szybko, bezbłędnie, bez kolejek. Umów wizytę online." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="TireForce Pro — Serwis Opon Warszawa" />
+  <meta property="og:description" content="Wymiana, balansowanie i naprawa opon. Umów wizytę online w 30 sekund." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0C0C0E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wdth,wght@0,75..125,100..900;1,75..125,100..900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ███████████████████████████████████
+       NAVIGATION
+  ███████████████████████████████████ -->
+  <header class="nav-wrapper" id="site-nav" aria-label="Nawigacja główna">
+    <nav class="nav-pill">
+      <a href="#hero" class="nav-logo" aria-label="TireForce Pro – strona główna">
+        <span class="nav-logo-text">TireForce</span>
+        <span class="nav-logo-pro">Pro</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#uslugi" class="nav-link">Usługi</a></li>
+        <li><a href="#cennik" class="nav-link">Cennik</a></li>
+        <li><a href="#promocja" class="nav-link">Promocja</a></li>
+        <li><a href="#rezerwacja" class="nav-link">Kontakt</a></li>
+      </ul>
+
+      <a href="#rezerwacja" class="btn btn-primary nav-cta">Umów wizytę</a>
+
+      <button class="nav-burger" id="nav-burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-line burger-line--top"></span>
+        <span class="burger-line burger-line--mid"></span>
+        <span class="burger-line burger-line--bot"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu mobilne" hidden>
+    <nav aria-label="Menu nawigacji mobilnej">
+      <ul class="mobile-nav-list" role="list">
+        <li class="mobile-nav-item" style="--i:0"><a href="#uslugi" class="mobile-nav-link">Usługi</a></li>
+        <li class="mobile-nav-item" style="--i:1"><a href="#cennik" class="mobile-nav-link">Cennik</a></li>
+        <li class="mobile-nav-item" style="--i:2"><a href="#promocja" class="mobile-nav-link">Promocja</a></li>
+        <li class="mobile-nav-item" style="--i:3"><a href="#rezerwacja" class="mobile-nav-link">Kontakt</a></li>
+        <li class="mobile-nav-item" style="--i:4">
+          <a href="#rezerwacja" class="btn btn-primary mobile-nav-cta">Umów wizytę</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ███████████████████████████████████
+         BLOCK 1: HERO
+    ███████████████████████████████████ -->
+    <section class="hero" id="hero" aria-label="Sekcja główna">
+      <div class="hero-inner container">
+
+        <!-- Left: Content -->
+        <div class="hero-content reveal-group">
+          <div class="eyebrow reveal-el" style="--delay:0ms">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            Serwis opon · Warszawa
+          </div>
+
+          <h1 class="hero-heading reveal-el" style="--delay:80ms">
+            Twoje koła<br />
+            w rękach<br />
+            <em>profesjonalistów</em>
+          </h1>
+
+          <p class="hero-subtitle reveal-el" style="--delay:160ms">
+            Wymiana, balansowanie i naprawa opon — szybko, bezbłędnie i bez kolejek.
+            Umów wizytę online w 30 sekund.
+          </p>
+
+          <div class="hero-actions reveal-el" style="--delay:240ms">
+            <a href="#rezerwacja" class="btn btn-primary btn-lg">
+              Umów wizytę
+              <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#cennik" class="btn btn-ghost btn-lg">Sprawdź cennik</a>
+          </div>
+
+          <div class="hero-stats reveal-el" style="--delay:320ms" aria-label="Statystyki serwisu">
+            <div class="hero-stat">
+              <span class="hero-stat-value">2 847+</span>
+              <span class="hero-stat-label">wymian w tym sezonie</span>
+            </div>
+            <div class="hero-stat-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">12 min</span>
+              <span class="hero-stat-label">średni czas obsługi</span>
+            </div>
+            <div class="hero-stat-divider" aria-hidden="true"></div>
+            <div class="hero-stat">
+              <span class="hero-stat-value">4.9/5.0</span>
+              <span class="hero-stat-label">ocena klientów</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="hero-image-wrap reveal-el" style="--delay:100ms" aria-hidden="true">
+          <div class="hero-image-frame">
+            <img
+              src="img/hero.jpeg"
+              alt="Profesjonalny mechanik przy wymianie koła w serwisie TireForce Pro"
+              class="hero-img"
+              width="800"
+              height="900"
+              loading="eager"
+            />
+            <div class="hero-image-overlay" aria-hidden="true"></div>
+          </div>
+
+          <!-- Floating badge -->
+          <div class="hero-badge" aria-label="Certyfikowany serwis">
+            <svg class="hero-badge-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l2.09 6.26L20 9.27l-5.18 4.94L16.18 21 12 17.77 7.82 21l1.36-6.79L4 9.27l5.91-.01L12 2z" stroke="#E8622A" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+            <span class="hero-badge-text">Certyfikowany serwis</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Decorative scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ███████████████████████████████████
+         BLOCK 2: USŁUGI + CENNIK
+    ███████████████████████████████████ -->
+    <section class="services" id="uslugi" aria-labelledby="services-heading">
+      <div class="container">
+
+        <!-- Section header -->
+        <div class="section-header reveal-el">
+          <span class="eyebrow">Co robimy</span>
+          <h2 class="section-heading" id="services-heading">Pełen zakres<br />usług oponiarskich</h2>
+          <p class="section-desc">
+            Od ekspresowej wymiany sezonowej po długoterminowe przechowywanie — wszystko w jednym miejscu.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- Services list -->
+          <div class="services-list reveal-el" id="cennik">
+            <article class="service-item reveal-el" style="--delay:0ms">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="service-info">
+                <h3 class="service-title">Wymiana opon sezonowa</h3>
+                <p class="service-desc">Wymiana kompletu kół z balansowaniem. Osobowe, SUV-y, 4×4.</p>
+              </div>
+            </article>
+
+            <article class="service-item reveal-el" style="--delay:60ms">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="service-info">
+                <h3 class="service-title">Balansowanie kół</h3>
+                <p class="service-desc">Precyzyjna diagnostyka i balansowanie na maszynie komputerowej.</p>
+              </div>
+            </article>
+
+            <article class="service-item reveal-el" style="--delay:120ms">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3-3a1 1 0 000-1.4l-1.6-1.6a1 1 0 00-1.4 0l-3 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M10.5 9.5L3 17l4 4 7.5-7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="service-info">
+                <h3 class="service-title">Naprawa przebitych opon</h3>
+                <p class="service-desc">Łatanie i wulkanizacja — jeśli opona nadaje się do naprawy.</p>
+              </div>
+            </article>
+
+            <article class="service-item reveal-el" style="--delay:180ms">
+              <div class="service-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                  <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <div class="service-info">
+                <h3 class="service-title">Sezonowe przechowywanie</h3>
+                <p class="service-desc">Przechowanie kompletu opon w suchym, klimatyzowanym magazynie. Od <strong>150 zł / sezon</strong>.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Price table -->
+          <div class="price-table-wrap reveal-el" style="--delay:100ms">
+            <div class="price-table-header">
+              <h3 class="price-table-title">Cennik</h3>
+              <span class="price-table-note">Ceny brutto · Sezon 2026</span>
+            </div>
+
+            <div class="price-table-scroll" role="region" aria-label="Tabela cennikowa" tabindex="0">
+              <table class="price-table" aria-describedby="price-table-caption">
+                <caption id="price-table-caption" class="sr-only">Cennik usług według typu pojazdu</caption>
+                <thead>
+                  <tr>
+                    <th scope="col" class="price-th price-th--service">Usługa</th>
+                    <th scope="col" class="price-th">
+                      <span class="price-th-label">Osobowe</span>
+                      <span class="price-th-sub">R14–R17</span>
+                    </th>
+                    <th scope="col" class="price-th">
+                      <span class="price-th-label">SUV / Crossover</span>
+                      <span class="price-th-sub">R17–R19</span>
+                    </th>
+                    <th scope="col" class="price-th">
+                      <span class="price-th-label">4×4 / Offroad</span>
+                      <span class="price-th-sub">R19+</span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="price-row">
+                    <td class="price-td price-td--service">Wymiana 4 kół <span class="price-td-sub">z balansowaniem</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">120</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">160</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">220</span> <span class="price-currency">zł</span></td>
+                  </tr>
+                  <tr class="price-row">
+                    <td class="price-td price-td--service">Wymiana 4 kół <span class="price-td-sub">bez balansowania</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">80</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">100</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">140</span> <span class="price-currency">zł</span></td>
+                  </tr>
+                  <tr class="price-row">
+                    <td class="price-td price-td--service">Balansowanie 4 kół</td>
+                    <td class="price-td price-td--value"><span class="price-val">60</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">80</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">100</span> <span class="price-currency">zł</span></td>
+                  </tr>
+                  <tr class="price-row">
+                    <td class="price-td price-td--service">Naprawa przebicia <span class="price-td-sub">1 opona</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">35</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">45</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">55</span> <span class="price-currency">zł</span></td>
+                  </tr>
+                  <tr class="price-row price-row--last">
+                    <td class="price-td price-td--service">Przechowywanie <span class="price-td-sub">sezon</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">150</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">180</span> <span class="price-currency">zł</span></td>
+                    <td class="price-td price-td--value"><span class="price-val">220</span> <span class="price-currency">zł</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="price-table-footer">
+              <a href="#rezerwacja" class="btn btn-primary">Umów wizytę</a>
+              <p class="price-table-note">Ceny mogą się różnić w zależności od rozmiaru opony.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ███████████████████████████████████
+         BLOCK 3: PROMOCJA + TIMER
+    ███████████████████████████████████ -->
+    <section class="promo" id="promocja" aria-labelledby="promo-heading">
+      <div class="promo-image-bg" aria-hidden="true">
+        <img src="img/promo.jpeg" alt="" class="promo-bg-img" loading="lazy" />
+        <div class="promo-bg-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="container promo-inner">
+
+        <div class="promo-content reveal-el">
+          <span class="eyebrow eyebrow--light promo-eyebrow">Oferta sezonowa</span>
+
+          <h2 class="promo-heading" id="promo-heading">
+            <span class="promo-discount">–20%</span>
+            na wymianę sezonową
+          </h2>
+
+          <p class="promo-desc">
+            Zarezerwuj termin do końca miesiąca i zapłać mniej. Cena obowiązuje przy wymianie kompletu 4 kół z balansowaniem.
+          </p>
+
+          <!-- Countdown Timer -->
+          <div class="timer-block" aria-label="Odliczanie do końca promocji">
+            <p class="timer-label">Do końca promocji zostało:</p>
+            <div class="timer" role="timer" aria-live="off" aria-atomic="true" id="countdown-timer">
+              <div class="timer-unit">
+                <span class="timer-value" id="timer-days">00</span>
+                <span class="timer-unit-label">dni</span>
+              </div>
+              <span class="timer-separator" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-value" id="timer-hours">00</span>
+                <span class="timer-unit-label">godz.</span>
+              </div>
+              <span class="timer-separator" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-value" id="timer-minutes">00</span>
+                <span class="timer-unit-label">min.</span>
+              </div>
+              <span class="timer-separator" aria-hidden="true">:</span>
+              <div class="timer-unit">
+                <span class="timer-value timer-value--pulse" id="timer-seconds">00</span>
+                <span class="timer-unit-label">sek.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#rezerwacja" class="btn btn-primary btn-lg promo-cta">
+            Skorzystaj z promocji
+            <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="promo-visual reveal-el" style="--delay:100ms" aria-hidden="true">
+          <div class="promo-badge-wrap">
+            <div class="promo-badge-circle">
+              <span class="promo-badge-num">–20%</span>
+              <span class="promo-badge-sub">rabat</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ███████████████████████████████████
+         BLOCK 4: FORMULARZ + MAPA
+    ███████████████████████████████████ -->
+    <section class="booking" id="rezerwacja" aria-labelledby="booking-heading">
+      <div class="booking-bg" aria-hidden="true">
+        <img src="img/workshop.png" alt="" class="booking-bg-img" loading="lazy" />
+        <div class="booking-bg-overlay"></div>
+      </div>
+      <div class="container booking-inner">
+
+        <!-- Form -->
+        <div class="booking-form-wrap reveal-el">
+          <div class="section-header section-header--left">
+            <span class="eyebrow">Rezerwacja</span>
+            <h2 class="section-heading" id="booking-heading">Zapisz się online</h2>
+            <p class="section-desc">Wybierz termin, podaj dane — odezwiemy się w ciągu 15 minut.</p>
+          </div>
+
+          <form class="booking-form" id="booking-form" novalidate autocomplete="on" aria-label="Formularz rezerwacji">
+
+            <!-- Step 1 -->
+            <div class="form-step" id="form-step-1">
+              <div class="form-step-label" aria-hidden="true">
+                <span class="form-step-num">01</span> Twoje dane
+              </div>
+
+              <div class="form-field">
+                <label for="client-name" class="form-label">Imię <span class="form-required" aria-label="pole wymagane">*</span></label>
+                <input
+                  type="text"
+                  id="client-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="np. Marcin"
+                  autocomplete="given-name"
+                  minlength="2"
+                  required
+                  aria-describedby="client-name-error"
+                />
+                <span class="form-error" id="client-name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="client-phone" class="form-label">Numer telefonu <span class="form-required" aria-label="pole wymagane">*</span></label>
+                <input
+                  type="tel"
+                  id="client-phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="+48 ___ ___ ___"
+                  autocomplete="tel"
+                  required
+                  aria-describedby="client-phone-error"
+                />
+                <span class="form-error" id="client-phone-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Step 2 (initially hidden) -->
+            <div class="form-step form-step--hidden" id="form-step-2" aria-hidden="true">
+              <div class="form-step-label" aria-hidden="true">
+                <span class="form-step-num">02</span> Szczegóły wizyty
+              </div>
+
+              <div class="form-field">
+                <label for="vehicle-type" class="form-label">Typ pojazdu <span class="form-required" aria-label="pole wymagane">*</span></label>
+                <div class="form-select-wrap">
+                  <select id="vehicle-type" name="vehicle" class="form-select" required aria-describedby="vehicle-type-error">
+                    <option value="" disabled selected>Wybierz typ pojazdu</option>
+                    <option value="osobowe">Osobowy (R14–R17)</option>
+                    <option value="suv">SUV / Crossover (R17–R19)</option>
+                    <option value="offroad">4×4 / Offroad (R19+)</option>
+                  </select>
+                  <svg class="form-select-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="form-error" id="vehicle-type-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label for="service-type" class="form-label">Usługa <span class="form-required" aria-label="pole wymagane">*</span></label>
+                <div class="form-select-wrap">
+                  <select id="service-type" name="service" class="form-select" required aria-describedby="service-type-error">
+                    <option value="" disabled selected>Wybierz usługę</option>
+                    <option value="wymiana-z-balansowaniem">Wymiana sezonowa z balansowaniem</option>
+                    <option value="wymiana-bez-balansowania">Wymiana sezonowa bez balansowania</option>
+                    <option value="balansowanie">Balansowanie kół</option>
+                    <option value="naprawa">Naprawa przebicia</option>
+                    <option value="przechowywanie">Przechowywanie sezonowe</option>
+                  </select>
+                  <svg class="form-select-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <span class="form-error" id="service-type-error" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <!-- Step 3 (initially hidden) -->
+            <div class="form-step form-step--hidden" id="form-step-3" aria-hidden="true">
+              <div class="form-step-label" aria-hidden="true">
+                <span class="form-step-num">03</span> Termin
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="booking-date" class="form-label">Data <span class="form-required" aria-label="pole wymagane">*</span></label>
+                  <input
+                    type="date"
+                    id="booking-date"
+                    name="date"
+                    class="form-input"
+                    required
+                    aria-describedby="booking-date-error"
+                  />
+                  <span class="form-error" id="booking-date-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="booking-time" class="form-label">Godzina <span class="form-required" aria-label="pole wymagane">*</span></label>
+                  <div class="form-select-wrap">
+                    <select id="booking-time" name="time" class="form-select" required aria-describedby="booking-time-error">
+                      <option value="" disabled selected>Wybierz godzinę</option>
+                      <option value="08:00">08:00</option>
+                      <option value="09:00">09:00</option>
+                      <option value="10:00">10:00</option>
+                      <option value="11:00">11:00</option>
+                      <option value="12:00">12:00</option>
+                      <option value="13:00">13:00</option>
+                      <option value="14:00">14:00</option>
+                      <option value="15:00">15:00</option>
+                      <option value="16:00">16:00</option>
+                      <option value="17:00">17:00</option>
+                      <option value="18:00">18:00</option>
+                    </select>
+                    <svg class="form-select-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <span class="form-error" id="booking-time-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg btn-block form-submit" id="form-submit">
+                Potwierdzam rezerwację
+                <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Success state -->
+            <div class="form-success" id="form-success" hidden aria-live="assertive">
+              <div class="form-success-icon">
+                <svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true">
+                  <circle class="success-circle" cx="26" cy="26" r="24" fill="none" stroke="#2D8B4E" stroke-width="2"/>
+                  <path class="success-check" d="M14 26l9 9 15-15" fill="none" stroke="#2D8B4E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <h3 class="form-success-title">Dziękujemy!</h3>
+              <p class="form-success-text">Twoja rezerwacja została przyjęta. Odezwiemy się w ciągu 15 minut.</p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Contact + Map -->
+        <div class="booking-contact reveal-el" style="--delay:80ms">
+          <div class="contact-block">
+            <h3 class="contact-block-title">Znajdziesz nas tutaj</h3>
+
+            <div class="contact-map-wrap">
+              <iframe
+                class="contact-map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.7756095985823!2d20.98918791588875!3d52.23215267975898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc81ed2b4a5d%3A0x3c73ea8f5f80e6be!2sGrzybowska%2043%2C%2000-855%20Warszawa!5e0!3m2!1spl!2spl!4v1713693600000!5m2!1spl!2spl"
+                title="Lokalizacja serwisu TireForce Pro na mapie Google"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <ul class="contact-list" role="list">
+              <li class="contact-item">
+                <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 2C8.686 2 6 4.686 6 8c0 5.25 6 14 6 14s6-8.75 6-14c0-3.314-2.686-6-6-6z" stroke="#E8622A" stroke-width="1.5"/>
+                  <circle cx="12" cy="8" r="2" stroke="#E8622A" stroke-width="1.5"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Adres</span>
+                  <address class="contact-value">
+                    <a href="https://maps.google.com/?q=Grzybowska+43+Warszawa" target="_blank" rel="noopener noreferrer" class="contact-link">
+                      ul. Grzybowska 43, 00-855 Warszawa
+                    </a>
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" stroke="#E8622A" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Telefon</span>
+                  <a href="tel:+48228471928" class="contact-value contact-link">+48 22 847 19 28</a>
+                </div>
+              </li>
+
+              <li class="contact-item">
+                <svg class="contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" stroke="#E8622A" stroke-width="1.5"/>
+                  <path d="M12 7v5l3 3" stroke="#E8622A" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <span class="contact-label">Godziny pracy</span>
+                  <div class="contact-value">
+                    <p>Pon–Pt: <strong>8:00–19:00</strong></p>
+                    <p>Sobota: <strong>9:00–16:00</strong></p>
+                    <p>Niedziela: <strong>nieczynne</strong></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ███████████████████████████████████
+       BLOCK 5: FOOTER
+  ███████████████████████████████████ -->
+  <footer class="footer" aria-label="Stopka strony">
+    <div class="container footer-inner">
+
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo" aria-label="TireForce Pro – wróć na górę strony">
+          <span class="nav-logo-text">TireForce</span><span class="nav-logo-pro">Pro</span>
+        </a>
+        <p class="footer-brand-desc">
+          Profesjonalny serwis opon w Warszawie.<br />Szybko, czysto, bez niespodzianek.
+        </p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Nawigacja w stopce">
+        <h4 class="footer-nav-title">Nawigacja</h4>
+        <ul class="footer-nav-list" role="list">
+          <li><a href="#uslugi" class="footer-nav-link">Usługi</a></li>
+          <li><a href="#cennik" class="footer-nav-link">Cennik</a></li>
+          <li><a href="#promocja" class="footer-nav-link">Promocja</a></li>
+          <li><a href="#rezerwacja" class="footer-nav-link">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-contact">
+        <h4 class="footer-nav-title">Kontakt</h4>
+        <ul class="footer-contact-list" role="list">
+          <li>
+            <address>ul. Grzybowska 43<br />00-855 Warszawa</address>
+          </li>
+          <li>
+            <a href="tel:+48228471928" class="footer-nav-link">+48 22 847 19 28</a>
+          </li>
+          <li class="footer-hours">
+            Pon–Pt: 8:00–19:00<br />Sob: 9:00–16:00
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 TireForce Pro. Wszelkie prawa zastrzeżone.</p>
+        <nav aria-label="Linki prawne">
+          <ul class="footer-legal" role="list">
+            <li><a href="#" class="footer-legal-link">Polityka prywatności</a></li>
+            <li><a href="#" class="footer-legal-link">Regulamin</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
