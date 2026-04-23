@@ -590,14 +590,14 @@ address {
   color: var(--text-primary);
   margin-bottom: var(--sp-6);
   max-width: 100%;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .hero-heading em {
   font-style: normal;
   color: var(--accent);
+  white-space: nowrap;
 }
 
 .hero-subtitle {
