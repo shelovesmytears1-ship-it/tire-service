@@ -13,8 +13,8 @@
   --bg-secondary:     #141416;
   --bg-surface:       #1C1C20;
   --bg-surface-hover: #222228;
-  --border:           #2A2A2F;
-  --border-light:     #35353D;
+  --border:           rgba(255, 255, 255, 0.12);
+  --border-light:     rgba(255, 255, 255, 0.18);
   --text-primary:     #E8E4DF;
   --text-secondary:   #8A8580;
   --text-tertiary:    #5A5651;
@@ -37,7 +37,7 @@
   --text-lg:    clamp(1.125rem,  1rem    + 0.50vw, 1.375rem);
   --text-xl:    clamp(1.5rem,    1.2rem  + 1.20vw, 2.25rem);
   --text-2xl:   clamp(2rem,      1.5rem  + 2.00vw, 3.25rem);
-  --text-hero:  clamp(2.5rem,    2rem    + 3.00vw, 5rem);
+  --text-hero:  clamp(1.8rem,    1.5rem  + 3.00vw, 5rem);
 
   /* Spacing (4pt scale) */
   --sp-1:   4px;
@@ -95,6 +95,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 img, video {

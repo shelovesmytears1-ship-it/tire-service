@@ -98,6 +98,7 @@
     navBurger.setAttribute('aria-expanded', 'true');
     navBurger.setAttribute('aria-label', 'Zamknij menu');
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('menu-open');
     /* Move focus to first link */
     var firstLink = mobileMenu.querySelector('a, button');
     if (firstLink) {
@@ -111,6 +112,7 @@
     navBurger.setAttribute('aria-expanded', 'false');
     navBurger.setAttribute('aria-label', 'Otwórz menu');
     document.body.style.overflow = '';
+    document.body.classList.remove('menu-open');
     /* Hide after transition */
     var TRANSITION_DURATION = 350;
     setTimeout(function () {
