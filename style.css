@@ -550,11 +550,11 @@ address {
 .hero::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -20%;
   left: -20%;
-  width: 60%;
-  height: 70%;
-  background: radial-gradient(ellipse, rgba(232, 98, 42, 0.06) 0%, transparent 70%);
+  width: 140%;
+  height: 140%;
+  background: radial-gradient(ellipse at 30% 30%, rgba(232, 98, 42, 0.08) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -590,8 +590,8 @@ address {
   color: var(--text-primary);
   margin-bottom: var(--sp-6);
   max-width: 100%;
-  overflow-wrap: normal;
-  hyphens: none;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .hero-heading em {
