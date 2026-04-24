@@ -82,6 +82,8 @@ html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   tab-size: 4;
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
 }
 
 body {
@@ -435,24 +437,29 @@ address {
 .burger-line {
   display: block;
   width: 20px;
-  height: 1.5px;
+  height: 2px;
   background: var(--text-primary);
   border-radius: 2px;
   transform-origin: center;
   transition:
     transform var(--dur-base) var(--ease-in-out),
-    opacity var(--dur-base) var(--ease-out);
+    opacity var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+
+.nav-burger[aria-expanded="true"] .burger-line {
+  background-color: var(--accent);
 }
 
 .nav-burger[aria-expanded="true"] .burger-line--top {
-  transform: translateY(6.5px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .nav-burger[aria-expanded="true"] .burger-line--mid {
   opacity: 0;
   transform: scaleX(0);
 }
 .nav-burger[aria-expanded="true"] .burger-line--bot {
-  transform: translateY(-6.5px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Mobile menu overlay */
