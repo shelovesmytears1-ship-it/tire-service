@@ -604,7 +604,6 @@ address {
 .hero-heading em {
   font-style: normal;
   color: var(--accent);
-  white-space: nowrap;
 }
 
 .hero-subtitle {
